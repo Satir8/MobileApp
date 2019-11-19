@@ -1,22 +1,27 @@
 <section class="video">
-    <div class="container">
-  <h2 class="video__headings">Watch the video</h2>
-  <p class="video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla
-    nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies
-    nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
-  <ul class="video__icon-list">
-    <li class="icon-list-item">
-      <svg class="video__svg-apple">
-        <use xlink:href="../images/sprite.svg#icon-apple"></use>
-      </svg>
-    </li>
-    <li class="icon-list-item">
-      <svg class="video__svg-android">
-        <use xlink:href="../images/sprite.svg#icon-android"></use>
-      </svg>
-    </li>
-  </ul>
-  <video class="video__media" src="./images/video/THIS IS HOME - Official Trailer.mp4"
-    poster="./images/img/preview-min.jpg" preload="none" controls></video>
-</div>
+  <div class="container video__outside-wrapper">
+    <div class="video__inside-wrapper">
+      <h2 class="video__headings">Watch the video</h2>
+      <p class="video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
+        fringilla
+        nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies
+        nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+      <ul class="video__icon-list">
+        <li class="icon-list-item">
+          <svg class="video__svg-apple">
+            <use xlink:href="../images/sprite.svg#icon-apple"></use>
+          </svg>
+        </li>
+        <li class="icon-list-item">
+          <svg class="video__svg-android">
+            <use xlink:href="../images/sprite.svg#icon-android"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <video class="video__media" poster="./images/img/preview-min.jpg" 
+      preload="none" type="video/mp4" controls muted>
+      <source src="./images/video/THIS IS HOME - Official Trailer.mp4">
+    </video>
+  </div>
 </section>
