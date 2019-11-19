@@ -25,23 +25,18 @@
   }
 
   &__icon-list {
+    @include flex-basic-pack (flex, space-between, center);
     margin: 0 auto;
     width: 154px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 38px;
 
     .icon-list-item {
+      @include flex-basic-pack (flex, center, center);
       width: 70px;
       height: 70px;
       background-color: #0098cd;
       border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
+  
       .video__svg-apple {
         width: 28px;
         height: 32px;
@@ -79,7 +74,6 @@
       width: 500px;
     }
   }
-  
 }
 
 @media (min-width:1200px) {
@@ -87,16 +81,13 @@
     padding: 72px 0px 68px 26px;
 
     &__inside-wrapper {
+      @include flex-basic-pack (flex, left, unset);
       width: 540px;
-      display: flex;
       flex-wrap: wrap;
-      justify-content: left;
     }
 
     &__outside-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-basic-pack (flex, space-between, center);
     }
 
     &__icon-list {
@@ -112,6 +103,5 @@
     &__media {
       width: 500px;
     }
-  }
-  
+  } 
 }
