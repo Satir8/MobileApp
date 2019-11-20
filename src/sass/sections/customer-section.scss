@@ -1,11 +1,60 @@
+.customer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.customer__card{
+  margin-bottom: 30px;
+}
+
 .pic {
   display: block;
   margin: 0 auto;
   margin-bottom: 26px;
 }
 
+.section__headings {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-green;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  padding: 0px 10px;
+  margin-bottom: 40px;
+
+  &::before {
+    content: '';
+    background-color: rgba(83, 91, 100, 0.4);
+    width: 60px;
+    height: 1px;
+  }
+
+  &::after {
+    content: '';
+    background-color: rgba(83, 91, 100, 0.4);
+    width: 60px;
+    height: 1px;
+  }
+}
+
+.customer__photo {
+  background: url(../../images/img/customer-section/img.jpg);
+  width: 100px;
+  height: 100px;
+  background-position: top center;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #c4c7c7;
+
+}
+
 .customer__name {
-  font-family: "OpenSans" sans-serif;
+  font-family: "OpenSans"sans-serif;
   font-size: 18px;
   line-height: 24px;
   display: block;
@@ -15,36 +64,91 @@
 }
 
 .customer__position {
-  font-family: "OpenSans" sans-serif;
+  font-family: "OpenSans"sans-serif;
   font-size: 13px;
   display: block;
   margin: 0 auto;
   text-align: center;
   line-height: 24px;
   color: #615f61;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.customer__text {
+  font-family: "OpenSans"sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: $color-dark;
+  position: relative;
+  
+}
+
+.customer__text::before {
+  display: block;
+  content: "";
+  background-image: url(../../images/img/customer-section/sign.png);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .9;
+  top: -24px;
+  left: -14px;
+}
+
+.slider__btn {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  height: 12px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
-.customer__text{
-font-family: "OpenSans" sans-serif;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-color: $color-dark;
-position: relative;
+
+// .slider__list{
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .slider__list-item{
+//   width: 10px;
+//   height: 10px;
+//   background-color: #615f61;
+// }
+
+
+.slider__btn-point {
+  width: 10px;
+  height: 10px;
+  background-color: #d4d3d4;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
 }
-.customer__text::before{
-    display: block;
-    content: "";
-    background-image: url(../../images/img/sign.png);
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: .9;
-    
+
+.slider__btn-point:hover {
+  background-color: $color-green;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 
+  .section__headings {
+    font-size: 28px;
+    line-height: 36px;
+  }
 
-  
+  .customer__position {
+    margin-bottom: 64px;
+  }
+.customer__card{
+  margin-bottom: 60px;
+}
+}
