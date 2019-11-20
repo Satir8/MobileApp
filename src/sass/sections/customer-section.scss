@@ -1,8 +1,9 @@
 .customer {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
-.customer__card{
+
+.customer__card {
   margin-bottom: 30px;
 }
 
@@ -82,22 +83,36 @@
   text-align: center;
   color: $color-dark;
   position: relative;
-  
+
+  &::before {
+    display: block;
+    content: "";
+    background-image: url(../../images/img/customer-section/sign.png);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+    top: -24px;
+    left: -14px;
+  }
+
 }
 
-.customer__text::before {
-  display: block;
-  content: "";
-  background-image: url(../../images/img/customer-section/sign.png);
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: .9;
-  top: -24px;
-  left: -14px;
-}
+// .customer__text::before {
+//   display: block;
+//   content: "";
+//   background-image: url(../../images/img/customer-section/sign.png);
+//   position: absolute;
+//   width: 50px;
+//   height: 50px;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   opacity: .9;
+//   top: -24px;
+//   left: -14px;
+// }
 
 .slider__btn {
   display: flex;
@@ -105,7 +120,6 @@
   width: 70px;
   height: 12px;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 // .slider__list{
@@ -129,15 +143,23 @@
   background-position: center;
   cursor: pointer;
   border: none;
+
+  &:hover {
+    background-color: $color-green;
+  }
 }
 
-.slider__btn-point:hover {
-  background-color: $color-green;
-}
+// .slider__btn-point:hover {
+//   background-color: $color-green;
+// }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
+  }
+
+  .customer{
+    padding-bottom: 110px;
   }
 
   .section__headings {
@@ -146,9 +168,71 @@
   }
 
   .customer__position {
-    margin-bottom: 64px;
+    margin-bottom: 50px;
   }
-.customer__card{
-  margin-bottom: 60px;
+
+  .customer__text {
+    font-size: 18px;
+    line-height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+
+    &::before {
+      top: -20px;
+      left: -40px;
+    }
+  }
+
+  // .customer__text::before {
+  //   top: -20px;
+  //   left: -40px;
+  // }
+
+  .customer__card {
+    margin-bottom: 60px;
+
+  }
+
 }
+
+@media (min-width:1200px) {
+  .container {
+    width: 1150px;
+  }
+
+  .customer{
+    padding-bottom: 126px;
+  }
+
+  .customer__text {
+    font-size: 18px;
+    line-height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+
+    &::before {
+      top: -20px;
+      left: -50px;
+    }
+  }
+
+  // .customer__text::before{
+  //   top: -20px;
+  //   left: -50px;
+  // }
+}
+
+@media (min-resolution:192dpi),
+  (min-resolution:2dppx) {
+  .customer__photo {
+    background: url(../../images/img/customer-section/img@2x.jpg);
+    width: 100px;
+    height: 100px;
+    background-position: top center;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #c4c7c7;
+  }
 }
