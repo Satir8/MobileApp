@@ -1,6 +1,9 @@
 <section class="contact">
   <div class="container">
     <h2 class="contact__headings">Contact Us</h2>
+
+    <div class="contact__content-wrapper">
+
     <form action="#" class="form">
       <ul class="form__list">
         <li class="form__list-item">
@@ -10,36 +13,49 @@
           <input type="email" name="email" placeholder="Email *" required>
         </li>
       </ul>
-      <textarea class="form__textarea" name="message" cols="30" rows="10" placeholder="Message *" minlength="10" required></textarea>
+      <textarea class="form__textarea" name="message" cols="30" rows="10" placeholder="Message *" minlength="10"
+        required></textarea>
       <button class="submit-btn">Submit</button>
 
     </form>
 
-    <div class="contact__info">
-      <h3 class="info__heading"></h3>
-      <p class="info__description"></p>
+    <div class="contact__info info">
+      <h3 class="info__heading">Get in touch with us</h3>
+      <p class="info__description">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque <span>rhoncus lacus
+        fringilla nulla sollicitudin tristique.</span></p>
       <ul class="info__list">
-          <li class="info__list-item">
-                <svg class="info__svg svg-facebook">
-                        <use xlink:href="../images/sprite.svg#icon-facebook"></use>
-                      </svg>
-          </li>
-          <li class="info__list-item">
-                <svg class="video__svg svg-twitter">
-                        <use xlink:href="../images/sprite.svg#icon-twitter"></use>
-                      </svg>
-          </li>
-          <li class="info__list-item">
-                <svg class="video__svg svg-linkedin">
-                        <use xlink:href="../images/sprite.svg#icon-linkedin"></use>
-                      </svg>
-          </li>
+        <li class="info__list-item">
+          <a href="#">
+            <svg class="info__list-item--svg-facebook">
+              <use xlink:href="../images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="info__list-item">
+          <a href="#">
+            <svg class="info__list-item--svg-twitter">
+              <use xlink:href="../images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="info__list-item">
+          <a href="#">
+            <svg class="info__list-item--svg-linkedin">
+              <use xlink:href="../images/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
-      <p class="contact__phone">+XX-XXXX - XXXX - XX</p>
-      <p class="contact__email">goiteens@gmail.com</p>
+      <p class="info__phone"><a href="#">+XX-XXXX - XXXX - XX</a></p>
+      <p class="info__email"><a href="#">goiteens@gmail.com</a></p>
     </div>
-    <div class="contact__adress">
-        <p class="adress__text">© 2019 GoIteens Template. <span>All Rights Reserved</span></p>
+  </div>
+
+</div>
+
+  <div class="contact__adress">
+    <div class="container">
+      <p class="adress__text">© 2019 GoIteens Template. <span>All Rights Reserved</span></p>
     </div>
   </div>
 </section>
