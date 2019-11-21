@@ -68,8 +68,8 @@
 .burger-menu__btn {
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 50px;
+  position: relative;
+  top: -6px;
   right: 20px;
   width: 26px;
   height: 26px;
