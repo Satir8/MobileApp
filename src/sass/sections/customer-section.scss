@@ -13,7 +13,7 @@
   margin-bottom: 26px;
 }
 
-.section__headings {
+.customer__headings {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -64,58 +64,10 @@
   }
 }
 
-.pic{
+.pic {
   border-radius: 50%;
   border: 2px solid #c4c7c7;
 }
-// .section__headings {
-//   font-family: 'Raleway', sans-serif;
-//   font-size: 18px;
-//   font-weight: 700;
-//   line-height: 36px;
-//   display: inline-block;
-//   margin: 0 auto;
-//   text-align: center;
-//   text-transform: uppercase;
-//   color: $color-green;
-//   margin-bottom: 40px;
-
-//   &::before {
-//     display: inline-block;
-//     content: '';
-//     vertical-align: middle;
-//     margin-right: 16px;
-//     background-color: rgba(83, 91, 100, 0.4);
-//     width: 60px;
-//     height: 1px;
-//   }
-
-//   &::after {
-//     display: inline-block;
-//     content: '';
-//     vertical-align: middle;
-//     margin-left: 16px;
-//     background-color: rgba(83, 91, 100, 0.4);
-//     width: 60px;
-//     height: 1px;
-//   }
-// }
-
-// .customer__photo {
-//   background: url(../../images/img/customer-section/img.jpg);
-//   width: 100px;
-//   height: 100px;
-//   background-position: top center;
-//   margin: 0 auto;
-//   border-radius: 50%;
-//   border: 2px solid #c4c7c7;
-
-// }
-// @media (min-resolution:192dpi){
-//   .customer__photo {
-//     background: url(../../images/img/customer-section/img@2x.jpg);
-//   }
-// }
 
 .customer__name {
   font-family: "OpenSans"sans-serif;
@@ -146,6 +98,11 @@
   text-align: center;
   color: $color-dark;
   position: relative;
+  padding: 0px 28px;
+
+  span {
+    display: none;
+  }
 
   &::before {
     display: block;
@@ -158,24 +115,10 @@
     background-repeat: no-repeat;
     opacity: .9;
     top: -24px;
-    left: -14px;
+    left: -5px;
   }
 
 }
-
-// .customer__text::before {
-//   display: block;
-//   content: "";
-//   background-image: url(../../images/img/customer-section/sign.png);
-//   position: absolute;
-//   width: 50px;
-//   height: 50px;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   opacity: .9;
-//   top: -24px;
-//   left: -14px;
-// }
 
 .slider__btn {
   display: flex;
@@ -184,17 +127,6 @@
   height: 12px;
   margin: 0 auto;
 }
-
-// .slider__list{
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .slider__list-item{
-//   width: 10px;
-//   height: 10px;
-//   background-color: #615f61;
-// }
 
 
 .slider__btn-point {
@@ -206,38 +138,33 @@
   background-position: center;
   cursor: pointer;
   border: none;
+  transition-property: background-color;
 
   &:hover {
     background-color: $color-green;
+    transition-duration: 600ms;
   }
 }
 
-// .slider__btn-point:hover {
-//   background-color: $color-green;
-// }
-
 @media (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-
   .customer {
     padding-bottom: 110px;
   }
 
-  .section__headings {
+  .customer__headings {
     font-size: 28px;
     line-height: 36px;
+    margin-bottom: 64px;
   }
 
   .rows {
     padding: 0 40px;
-  
+
     &::before {
       position: absolute;
       left: -40px;
     }
-  
+
     &::after {
       position: absolute;
       right: -40px;
@@ -254,6 +181,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 580px;
+    padding: 0;
+
+    span {
+      display: inline;
+    }
 
     &::before {
       top: -20px;
@@ -261,25 +193,18 @@
     }
   }
 
-  // .customer__text::before {
-  //   top: -20px;
-  //   left: -40px;
-  // }
-
   .customer__card {
     margin-bottom: 60px;
-
   }
-
 }
 
 @media (min-width:1200px) {
-  .container {
-    width: 1150px;
-  }
-
   .customer {
     padding-bottom: 126px;
+  }
+
+  .customer__position {
+    margin-bottom: 110px;
   }
 
   .customer__text {
@@ -288,29 +213,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 960px;
+    padding: 0px 27px;
 
     &::before {
       top: -20px;
-      left: -50px;
+      left: -16px;
     }
   }
-
-  // .customer__text::before{
-  //   top: -20px;
-  //   left: -50px;
-  // }
 }
-
-// NEED FIX 2X@!!!
-// @media (min-resolution:192dpi)
-//  {
-//   .customer__photo {
-//     background: url(../../images/img/customer-section/img@2x.jpg);
-//     width: 100px;
-//     height: 100px;
-//     background-position: top center;
-//     margin: 0 auto;
-//     border-radius: 50%;
-//     border: 2px solid #c4c7c7;
-//   }
-// }
