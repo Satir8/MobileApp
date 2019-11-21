@@ -73,6 +73,33 @@
       width: 34px;
       height: 34px;
       margin: 0px 30px 0px 8px;
+      fill: #1ab798;
+      transition-property: fill;
+      transition-duration: 200ms;
+
+      &:hover {
+        fill: #ffbc85;
+        // stroke: #ffbc85;
+        
+      }
+
+      // box-shadow: none;
+      // background-color: unset;
+      // // background: radial-gradient(#fff9a8, #ffdca8);
+      // transition-property: box-shadow, background-color;
+      // transition-duration: 1.5s;
+      
+
+      // &:hover {
+      //   box-shadow: inset 0px 0px 100px #fff9a8;
+      //   transition-duration: 500ms;
+      //   transition-timing-function: ease-out;
+      // }
+
+      // &:hover {
+      //   background-color: #ffbc85;
+      //   transition-duration: 1.2s;
+      //   transition-timing-function: ease-out;
     }
   }
 
@@ -173,7 +200,7 @@
       background-color: unset;
       // background: radial-gradient(#fff9a8, #ffdca8);
       transition-property: box-shadow, background-color;
-      transition-duration: 1.5s;
+      transition-duration: 1.2s;
       
 
       &:hover {
@@ -184,7 +211,7 @@
 
       &:hover {
         background-color: #ffbc85;
-        transition-duration: 1.2s;
+        transition-duration: 600ms;
         transition-timing-function: ease-out;
       }
 
