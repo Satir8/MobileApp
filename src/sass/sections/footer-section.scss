@@ -103,10 +103,43 @@
     border-radius: 3px;
     padding: 14px 42px;
     border: 1px solid rgb(49, 212, 231);
+    animation-duration: .8s;
+    animation-fill-mode: both;
 
     &:hover {
+      animation-name: jello-diagonal-1;
       resize: none;
       border: 1px solid yellow;
+    }
+
+    @keyframes jello-diagonal-1 {
+      0% {
+        transform: skew(0deg 0deg)
+      }
+
+      30% {
+        transform: skew(25deg 25deg)
+      }
+
+      40% {
+        transform: skew(-15deg, -15deg)
+      }
+
+      50% {
+        transform: skew(15deg, 15deg)
+      }
+
+      65% {
+        transform: skew(-5deg, -5deg)
+      }
+
+      75% {
+        transform: skew(5deg, 5deg)
+      }
+
+      100% {
+        transform: skew(0deg 0deg)
+      }
     }
   }
 
@@ -148,6 +181,46 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      animation-duration: 1.7s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+
+      @keyframes heartbeat {
+        from {
+          transform: scale(1);
+          transform-origin: center center;
+          animation-timing-function: ease-out
+        }
+
+        10% {
+          transform: scale(1.11);
+          animation-timing-function: ease-in
+        }
+
+        17% {
+          transform: scale(1.28);
+          animation-timing-function: ease-out
+        }
+
+        33% {
+          transform: scale(1.07);
+          animation-timing-function: ease-in
+        }
+
+        45% {
+          transform: scale(1);
+          animation-timing-function: ease-out
+        }
+      }
+
+      &:hover {
+        animation-name: heartbeat;
+      }
+
+      &:hover svg {
+        transition-duration: 400ms;
+        transform: scale(1.4);
+      }
 
       &:nth-child(2) {
         background-color: #3ec2f3;
@@ -160,16 +233,19 @@
       &--svg-facebook {
         width: 20px;
         height: 20px;
+        transition-property: transform;
       }
 
       &--svg-twitter {
         width: 18px;
         height: 20px;
+        transition-property: transform;
       }
 
       &--svg-linkedin {
         width: 20px;
         height: 20px;
+        transition-property: transform;
       }
     }
 
@@ -279,7 +355,7 @@
     }
 
     &__headings {
-      
+
       margin-bottom: 124px;
     }
 
@@ -287,13 +363,13 @@
       display: flex;
       justify-content: space-between;
     }
-    
+
     .info {
       width: 420px;
       padding-bottom: 0px;
       order: -1;
       text-align: left;
-      
+
       &__list {
         margin: 0;
         margin-bottom: 30px;

@@ -59,12 +59,20 @@
           font-size: 18px;
           color: $color-dark;
           margin-bottom: 14px;
+          transition-property: color;
+          transition-duration: 200ms;
         }
 
         .features__text {
           font-size: 13px;
           line-height: 24px;
         }
+      }
+
+      &:hover .features__list-svg,
+      &:hover .features__title {
+        fill: #ffbc85;
+        color: #ffbc85;
       }
     }
 
@@ -76,30 +84,6 @@
       fill: #1ab798;
       transition-property: fill;
       transition-duration: 200ms;
-
-      &:hover {
-        fill: #ffbc85;
-        // stroke: #ffbc85;
-        
-      }
-
-      // box-shadow: none;
-      // background-color: unset;
-      // // background: radial-gradient(#fff9a8, #ffdca8);
-      // transition-property: box-shadow, background-color;
-      // transition-duration: 1.5s;
-      
-
-      // &:hover {
-      //   box-shadow: inset 0px 0px 100px #fff9a8;
-      //   transition-duration: 500ms;
-      //   transition-timing-function: ease-out;
-      // }
-
-      // &:hover {
-      //   background-color: #ffbc85;
-      //   transition-duration: 1.2s;
-      //   transition-timing-function: ease-out;
     }
   }
 

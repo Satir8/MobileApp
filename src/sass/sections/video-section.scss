@@ -36,15 +36,70 @@
       height: 70px;
       background-color: #0098cd;
       border-radius: 50%;
-  
+      animation-duration: 1.7s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+
+      &:hover {
+        animation-name: heartbeat;
+      }
+
+      &:hover svg {
+        transition-duration: 400ms;
+        transform: scale(1.8);
+        fill: #ffbc85;
+      }
+
+      @keyframes heartbeat {
+        from {
+          transform: scale(1);
+          transform-origin: center center;
+          animation-timing-function: ease-out
+        }
+
+        10% {
+          transform: scale(.91);
+          animation-timing-function: ease-in
+        }
+
+        17% {
+          transform: scale(.98);
+          animation-timing-function: ease-out
+        }
+
+        33% {
+          transform: scale(.87);
+          animation-timing-function: ease-in
+        }
+
+        45% {
+          transform: scale(1);
+          animation-timing-function: ease-out
+        }
+      }
+
+      @keyframes scale-up-center {
+        0% {
+          transform: scale(1)
+        }
+
+        100% {
+          transform: scale(1.5)
+        }
+      }
+
       .video__svg-apple {
         width: 28px;
         height: 32px;
+        fill: #ffffff;
+        transition-property: transform, fill;
       }
 
       .video__svg-android {
         width: 30px;
         height: 36px;
+        fill: #ffffff;
+        transition-property: transform, fill;
       }
     }
   }
@@ -103,5 +158,5 @@
     &__media {
       width: 500px;
     }
-  } 
+  }
 }
