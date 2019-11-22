@@ -1,5 +1,5 @@
 .header {
-  background-image: url('../../images/header/bg-header.jpg');
+  background-image: url('../images/header/bg-header.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,7 +9,7 @@
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
   .header {
-    background-image: url('../../images/header/bg-header@2x.jpg');
+    background-image: url('../images/header/bg-header@2x.jpg');
   }
 }
 
@@ -30,7 +30,7 @@
 
   &__btn {
     display: block;
-    background-image: url('../../images/header/burger.png');
+    background-image: url('../images/header/burger.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 28px;
@@ -133,13 +133,13 @@
 
 @media (min-width: 768px) {
   .header {
-    background-image: url('../../images/header/bg-header-tablet.jpg');
+    background-image: url('../images/header/bg-header-tablet.jpg');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
     .header {
-      background-image: url('../../images/header/bg-header-tablet@2x.jpg');
+      background-image: url('../images/header/bg-header-tablet@2x.jpg');
     }
   }
 
@@ -176,13 +176,13 @@
 
 @media (min-width: 1200px) {
   .header {
-    background-image: url('../../images/header/bg-header-desktop.jpg');
+    background-image: url('../images/header/bg-header-desktop.jpg');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
     .header {
-      background-image: url('../../images/header/bg-header-desktop@2x.jpg');
+      background-image: url('../images/header/bg-header-desktop@2x.jpg');
     }
   }
 
