@@ -189,16 +189,10 @@
 
       &:hover {
         box-shadow: inset 0px 0px 100px #fff9a8;
-        transition-duration: 500ms;
-        transition-timing-function: ease-out;
-      }
-
-      &:hover {
         background-color: #ffbc85;
         transition-duration: 600ms;
         transition-timing-function: ease-out;
       }
-
     }
   }
 }

@@ -62,6 +62,9 @@
     position: relative;
     display: block;
     margin-left: 28px;
+    box-shadow: unset;
+    transition-property: box-shadow, background-color;
+    transition-duration: 1.2s;
 
     &::before {
       content: '';
@@ -74,6 +77,13 @@
       position: absolute;
       top: 12px;
       left: 20px;
+    }
+
+    &:hover {
+      box-shadow: inset 0px 0px 2px #fff9a8;
+      background-color: #ffbc85;
+      transition-duration: 600ms;
+      transition-timing-function: ease-out;
     }
   }
 

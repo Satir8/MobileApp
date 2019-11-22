@@ -108,6 +108,7 @@
 
     &:hover {
       animation-name: heartbeat;
+      animation-duration: 1.5s;
       resize: none;
       border: 1px solid yellow;
     }
@@ -183,7 +184,13 @@
       animation-timing-function: ease-in-out;
       animation-fill-mode: both;
 
-      @keyframes heartbeat {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @keyframes heartbeat-lg {
         from {
           transform: scale(1);
           transform-origin: center center;
@@ -212,7 +219,7 @@
       }
 
       &:hover {
-        animation-name: heartbeat;
+        animation-name: heartbeat-lg;
       }
 
       &:hover svg {
