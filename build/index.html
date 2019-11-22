@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Baza-Baza-Ya_Raketa-1</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  
   <!-- Сюда будет всталена ссылка на файл стилей -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- endinject -->
 </head>
 
@@ -62,16 +62,16 @@
           <li class="introduction__list-item">Integer ut mattis nulla, eget vehicula elit </li>
           <li class="introduction__list-item">Praesent rutrum ac nunc et </li>
         </ul>
-        <a href="#" class="introduction__btn">Download</a>
+        <a href="#" target="_blank" download="./images/download/layout.rar" class="introduction__btn">Download</a>
         <div class="introduction__img">
           <picture>
-            <source srcset="./images/header/screen.png, ./images/header/screen@2x.png 2x">
-            <img srcset="./images/header/screen.png" alt="iPhone" class="introduction__img-medium">
+            <source srcset="./images/header/screen.png, ./images/header/screen@2x.png" media="all">
+            <img src="./images/header/screen.png" alt="iPhone" class="introduction__img-medium">
           </picture>
           <div class="introduction__img--overlay first-overlay"><span class="visually-hidden">Overlay</span></div>
           <picture>
-            <source srcset="./images/header/screen.png, ./images/header/screen@2x.png 2x">
-            <img srcset="./images/header/screen.png" alt="iPhone" class="introduction__img-large">
+            <source srcset="./images/header/screen.png, ./images/header/screen@2x.png" media="all">
+            <img src="./images/header/screen.png" alt="iPhone" class="introduction__img-large">
           </picture>
           <div class="introduction__img--overlay second-overlay"><span class="visually-hidden">Overlay</span></div>
         </div>
@@ -180,9 +180,9 @@
         </ul>
         <div class="features__picture-wrapper">
         <picture class="features__phone-picture">
-          <source srcset="./images/img/features/features-screen.png 1x, 
-            ./images/img/features/features-screen@2x.png 2x" sizes="418px">
-          <img src="./images/img/features/features-screen.png" alt="phone" width="418px" height="726px">
+          <source srcset="./images/img/features/features-screen.png, 
+            ./images/img/features/features-screen@2x.png" media="all">
+          <img src="./images/img/features/features-screen.png" alt="phone" width="418" height="726">
         </picture>
         <div class="features__picture--overlay"><span class="visually-hidden">Overlay</span></div>
       </div>
@@ -214,8 +214,8 @@
           </ul>
         </div>
         <video class="video__media" poster="./images/img/video/preview-min.jpg" 
-          preload="none" type="video/mp4" controls muted>
-          <source src="./images/video/THIS IS HOME - Official Trailer.mp4">
+          preload="none" controls muted>
+          <source src="./images/video/THIS IS HOME.mp4" media="all">
         </video>
       </div>
     </section>
@@ -377,9 +377,8 @@
         <h2 class="customer__headings">WHAT OUR <span>CUSTOMER’S SAY</span></h2>
         <picture>
           <source
-            srcset="./images/img/customer-section/circle-pic@1x-min.jpg, ./images/img/customer-section/circle-pic@2x-min.jpg" sizes="100px">
-          <img class="pic" src="./images/img/customer-section/circle-pic@1x-min.jpg" alt="circle-pic" width="100"
-            height="100">
+            srcset="./images/img/customer/circle@1x.jpg, ./images/img/customer/circle@2x.jpg">
+          <img class="pic" src="./images/img/customer/circle@1x.jpg" alt="circle-pic" width="100">
             
         </picture>
         <div class="customer__photo"></div>
@@ -398,7 +397,6 @@
         <button class="slider__btn-point"></button>
       </div>
     </section>
-    
   </main>
   <footer class="footer">
         <section class="contact">
@@ -449,8 +447,8 @@
                 </a>
               </li>
             </ul>
-            <p class="info__phone"><a href="#">+XX-XXXX - XXXX - XX</a></p>
-            <p class="info__email"><a href="#">goiteens@gmail.com</a></p>
+            <p class="info__phone"><a href="+380987238805">+38-098-723-88-05</a></p>
+            <p class="info__email"><a href="mailto:goiteens@gmail.com">goiteens@gmail.com</a></p>
           </div>
         </div>
       
