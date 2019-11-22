@@ -107,38 +107,36 @@
     animation-fill-mode: both;
 
     &:hover {
-      animation-name: jello-diagonal-1;
+      animation-name: heartbeat;
       resize: none;
       border: 1px solid yellow;
     }
 
-    @keyframes jello-diagonal-1 {
-      0% {
-        transform: skew(0deg 0deg)
+    @keyframes heartbeat {
+      from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out
       }
 
-      30% {
-        transform: skew(25deg 25deg)
+      10% {
+        transform: scale(.91);
+        animation-timing-function: ease-in
       }
 
-      40% {
-        transform: skew(-15deg, -15deg)
+      17% {
+        transform: scale(.98);
+        animation-timing-function: ease-out
       }
 
-      50% {
-        transform: skew(15deg, 15deg)
+      33% {
+        transform: scale(.87);
+        animation-timing-function: ease-in
       }
 
-      65% {
-        transform: skew(-5deg, -5deg)
-      }
-
-      75% {
-        transform: skew(5deg, 5deg)
-      }
-
-      100% {
-        transform: skew(0deg 0deg)
+      45% {
+        transform: scale(1);
+        animation-timing-function: ease-out
       }
     }
   }
