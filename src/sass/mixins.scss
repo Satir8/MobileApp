@@ -1,0 +1,9 @@
+@mixin flex-basic-pack ($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}

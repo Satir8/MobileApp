@@ -1,0 +1,162 @@
+.video {
+  background-color: #31d4e7;
+  padding: 60px 0;
+
+  &__headings {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 22px;
+
+  }
+
+  &__description {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-white;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 22px;
+    margin-bottom: 24px;
+  }
+
+  &__icon-list {
+    @include flex-basic-pack (flex, space-between, center);
+    margin: 0 auto;
+    width: 154px;
+    margin-bottom: 38px;
+
+    .icon-list-item {
+      @include flex-basic-pack (flex, center, center);
+      width: 70px;
+      height: 70px;
+      background-color: #0098cd;
+      border-radius: 50%;
+      animation-duration: 1.7s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+
+      &:hover {
+        animation-name: heartbeat;
+      }
+
+      &:hover svg {
+        transition-duration: 400ms;
+        transform: scale(1.8);
+        fill: #ffbc85;
+      }
+
+      @keyframes heartbeat {
+        from {
+          transform: scale(1);
+          transform-origin: center center;
+          animation-timing-function: ease-out
+        }
+
+        10% {
+          transform: scale(.91);
+          animation-timing-function: ease-in
+        }
+
+        17% {
+          transform: scale(.98);
+          animation-timing-function: ease-out
+        }
+
+        33% {
+          transform: scale(.87);
+          animation-timing-function: ease-in
+        }
+
+        45% {
+          transform: scale(1);
+          animation-timing-function: ease-out
+        }
+      }
+
+      @keyframes scale-up-center {
+        0% {
+          transform: scale(1)
+        }
+
+        100% {
+          transform: scale(1.5)
+        }
+      }
+
+      .video__svg-apple {
+        width: 28px;
+        height: 32px;
+        fill: #ffffff;
+        transition-property: transform, fill;
+      }
+
+      .video__svg-android {
+        width: 30px;
+        height: 36px;
+        fill: #ffffff;
+        transition-property: transform, fill;
+      }
+    }
+  }
+
+  &__media {
+    display: block;
+    margin: 0 auto;
+    width: 285px;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .video {
+    padding: 106px 0;
+
+    &__headings {
+      font-size: 28px;
+    }
+
+    &__description {
+      padding: 0 80px;
+    }
+
+    &__media {
+      width: 500px;
+    }
+  }
+}
+
+@media (min-width:1200px) {
+  .video {
+    padding: 72px 0px 68px 26px;
+
+    &__inside-wrapper {
+      @include flex-basic-pack (flex, left, unset);
+      width: 540px;
+      flex-wrap: wrap;
+    }
+
+    &__outside-wrapper {
+      @include flex-basic-pack (flex, space-between, center);
+    }
+
+    &__icon-list {
+      margin: 0;
+      margin-bottom: 0px;
+    }
+
+    &__description {
+      padding: 0;
+      text-align: left;
+    }
+
+    &__media {
+      width: 500px;
+    }
+  }
+}
