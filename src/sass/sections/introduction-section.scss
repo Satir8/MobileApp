@@ -37,7 +37,7 @@
 
       &::before {
         content: '';
-        background-image: url('../../images/header/arrow.png');
+        background-image: url('../images/header/arrow.png');
         background-repeat: no-repeat;
         background-position: center;
         width: 7px;
@@ -65,7 +65,7 @@
 
     &::before {
       content: '';
-      background-image: url('../../images/header/icon-download.png');
+      background-image: url('../images/header/icon-download.png');
       background-repeat: no-repeat;
       background-position: left center;
       background-size: cover;
